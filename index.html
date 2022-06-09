@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this domain is parked</title>
+    <link rel="icon" type="image/x-icon" href="https://s.charr.cc/favicon.ico">
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body {
+            margin: unset;
+            background-color:whitesmoke;
+        }
+        div {
+            display: grid;
+            justify-content: center;
+        }
+
+        h1 {
+            transition-duration: 0.25s;
+            text-decoration: underline;
+            color: rgb(151, 130, 102);
+            padding-top: 100px;
+            text-align: center;
+            line-height: 0px;
+        }
+
+        p {
+            transition-duration: 0.25s;
+            line-height: 0px;
+            text-align: right;
+            cursor: default;
+            color: rgb(151, 130, 102);
+            -webkit-touch-callout: none; /* iOS Safari */
+			-webkit-user-select: none; /* Safari */
+			-khtml-user-select: none; /* Konqueror HTML */
+			-moz-user-select: none; /* Old versions of Firefox */
+			-ms-user-select: none; /* Internet Explorer/Edge */
+			user-select: none;
+            font-weight: bold;
+        }
+        p a {
+            color: rgb(81, 73, 63);
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: normal;
+        }
+        p a:hover {
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 500px) and (min-width: 401px) {
+            h1 { font-size:x-large; }
+        }
+        @media screen and (max-width: 400px) and (min-width: 301px) {
+            h1 { font-size: large; }
+        }
+        @media screen and (max-width: 500px) and (min-width: 301px) {
+            p { font-size: small; }
+        }
+
+        @media screen and (max-width: 300px) {
+            h1 { font-size: 6vw; }
+            p {
+                font-size: 5vw;
+            }
+        }
+
+        @media screen and (max-height: 300px) {
+            div {
+                display: unset;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translateY(-50%) translateX(-50%);
+                width: max-content;
+            }
+            h1 {
+                padding-top: unset;
+                line-height: normal;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>this domain is parked..</h1>
+        <p><a href="https://charr.cc" draggable="false">charr.cc</a>  |  <a href="mailto://me@charr.cc" draggable="false">me@charr.cc</a></p>
+    </div>
+    <script>
+        document.title = `${location.hostname} is parked`
+    </script>
+</body>
+</html>
