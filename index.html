@@ -7,12 +7,11 @@
     <title>this domain is parked</title>
     <link rel="icon" type="image/x-icon" href="https://s.charr.cc/favicon.ico">
     <style>
-        * {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
+        * { font-family: Verdana, Geneva, Tahoma, sans-serif; }
         body {
             margin: unset;
             background-color:whitesmoke;
+            overflow: hidden;
         }
         div {
             display: grid;
@@ -48,25 +47,16 @@
             text-decoration: none;
             font-weight: normal;
         }
-        p a:hover {
-            text-decoration: underline;
-        }
+        p a:hover { text-decoration: underline; }
+        p a:active { text-decoration: none; }
 
-        @media screen and (max-width: 500px) and (min-width: 401px) {
-            h1 { font-size:x-large; }
-        }
-        @media screen and (max-width: 400px) and (min-width: 301px) {
-            h1 { font-size: large; }
-        }
-        @media screen and (max-width: 500px) and (min-width: 301px) {
-            p { font-size: small; }
-        }
+        @media screen and (max-width: 500px) and (min-width: 401px) { h1 { font-size:x-large; } }
+        @media screen and (max-width: 400px) and (min-width: 301px) { h1 { font-size: large; } }
+        @media screen and (max-width: 500px) and (min-width: 301px) { p { font-size: small; } }
 
         @media screen and (max-width: 300px) {
             h1 { font-size: 6vw; }
-            p {
-                font-size: 5vw;
-            }
+            p { font-size: 5vw; }
         }
 
         @media screen and (max-height: 300px) {
@@ -90,8 +80,6 @@
         <h1>this domain is parked..</h1>
         <p><a href="https://charr.cc" draggable="false">charr.cc</a>  |  <a href="mailto:me@charr.cc" draggable="false">me@charr.cc</a></p>
     </div>
-    <script>
-        document.title = `${location.hostname} is parked`
-    </script>
+    <script> document.title = `${location.hostname} is parked`; </script>
 </body>
 </html>
