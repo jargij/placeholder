@@ -4,3 +4,4 @@ placeholder (cloudflare) pages for my reserved domains
 - [strr.cc](https://strr.cc)
 - [webpages.directory](https://webpages.directory)
 - [texts.land](https://texts.land)
+- [snakery.io](https://snakery.io)
