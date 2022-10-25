@@ -228,8 +228,10 @@
         function mouseMove(event) {
             if (!dragging) return
             if (typeof event.touches === "object") event = event.touches[0] 
-            image.style.left = `${event.clientX - offset.x}px`
-            image.style.top = `${event.clientY - offset.y}px`
+            const newLeft = event.clientX - offset.x
+            const newTop = event.clientY - offset.y
+            image.style.left = `${newLeft < 0 ? 0 : (newLeft > main.clientWidth - image.clientWidth ? main.clientWidth - image.clientWidth : newLeft)}px`
+            image.style.top = `${newTop < 0 ? 0 : (newTop > main.clientHeight - image.clientHeight ? main.clientHeight - image.clientHeight : newTop)}px`
         }
         image.addEventListener("mousedown", mouseDown)
         image.addEventListener("touchstart", mouseDown)
